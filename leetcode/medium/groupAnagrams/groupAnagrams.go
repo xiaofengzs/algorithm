@@ -1,18 +1,10 @@
-package main
+package groupAnagrams
 
 import (
 	"fmt"
 	"sort"
 	"strings"
 )
-
-func main() {
-	fmt.Println("This is for testing.")
-
-	input := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
-
-	fmt.Println(groupAnagrams3(input))
-}
 
 // option3: 统计每个单词中字母出现的次数，字母异位词的字母出现的次数一定相等
 // 这里有个技巧是需要巧妙的利用数组来解题，字母'a'减去‘a’得到0，也就是数组的第0位表示a，以此类推

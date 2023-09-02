@@ -1,20 +1,8 @@
-package main
-
-import (
-	"fmt"
-	// "sort"
-)
-
-func main() {
-	fmt.Println("This is for testing.")
-
-	height := []int{1, 8, 6, 2, 5, 4, 8, 3, 7}
-
-	fmt.Println(maxArea2(height))
-}
+package containerwithmostwater
 
 /*
 Option2: 设置左右两个指针，指向头和尾，计算面积，然后移动值较小的那个指针
+具体证明再官方有解释 https://leetcode.cn/problems/container-with-most-water/solutions/207215/sheng-zui-duo-shui-de-rong-qi-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked
 */
 func maxArea2(height []int) int {
 	left, right, result := 0, len(height) - 1, 0

@@ -1,7 +1,6 @@
 package groupAnagrams
 
 import (
-	"fmt"
 	"sort"
 	"strings"
 )
